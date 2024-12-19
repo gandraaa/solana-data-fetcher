@@ -1,0 +1,28 @@
+{{> layout title="Wallet Balance"}}
+
+<div class="balance-container">
+    <form method="get" action="/">
+        <div class="input-wrapper">
+            <div class="label-input-container">
+            <label for="public_key">Enter your public key:</label>
+        <input
+            type="text"
+            id="public_key"
+            name="public_key"
+            placeholder="Your Solana public key"
+            value="{{public_key}}"
+            required
+        />
+        </div>
+        <button type="submit">Check Balance</button>
+        </div>
+    </form>
+
+    {{#if error}}
+        <p class="error">{{error}}</p>
+    {{/if}}
+
+    {{#if balance}}
+        <p>Your balance: <b>{{balance}} SOL</b> (<b>${{usd_balance}} USD</b>)</p>
+    {{/if}}
+</div>

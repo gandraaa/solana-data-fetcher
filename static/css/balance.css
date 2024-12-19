@@ -1,0 +1,29 @@
+.balance-container {
+    padding: 20px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.label-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 70%;
+    max-width: 700px;
+}
+
+.balance-container input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.balance-container button {
+    padding: 10px 15px;
+    font-size: 16px;
+}

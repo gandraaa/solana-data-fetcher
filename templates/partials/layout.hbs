@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    {{#if css_file}}
+    <link rel="stylesheet" href="/static/css/{{css_file}}">
+    {{/if}}
+</head>
+<body>
+    <header>
+        <h1>Balance checker</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+        </nav>
+    </header>
+    <main>
+        {{{body}}}
+    </main>
+</body>
+</html>
