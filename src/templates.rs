@@ -23,5 +23,10 @@ pub fn init_templates() -> Arc<Handlebars<'static>> {
         .register_template_file("about", "./templates/about.hbs")
         .expect("Failed to register about template");
 
+    handlebars
+        .register_template_file("layout", "./templates/partials/layout.hbs")
+        .expect("Failed to register layout template");
+    
+
     Arc::new(handlebars)
 }
